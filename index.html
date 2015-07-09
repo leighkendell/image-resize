@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Resize</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <form action="" method="POST" onsubmit="calcsize(event);" class="resize-form">
+        <p>the current <label for="currentwidth">width</label> of my image is: <input type="number" required id="currentwidth"></p>
+        <p>the current <label for="currentheight">height</label> of my image is: <input type="number" required id="currentheight"></p>
+        <p>the new 
+            <select name="" id="widthheight">
+                <option value="width">width</option>
+                <option value="height">height</option>
+            </select>
+            of my image is: <input type="number" required id="newsize">
+        </p>
+        <button name="submit" type="submit" id="submit">get new dimensions</button>
+
+        <div id="result" class="result"></div>
+    </form>
+
+    <script src="js/min/main.min.js"></script>
+</body>
+</html>
